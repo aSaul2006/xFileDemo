@@ -199,7 +199,7 @@ cResource* cRenderManager::load3DFromXML(TiXmlElement *Element)
 	if(Element)
 	{
 		cRenderResource* Resource = new cRenderResource();
-
+		
 		for(TiXmlAttribute* ElementAttrib = Element->FirstAttribute(); ElementAttrib; ElementAttrib= ElementAttrib->Next())
 		{
 			//examine our audio resource object
@@ -225,6 +225,7 @@ cResource* cRenderManager::load3DFromXML(TiXmlElement *Element)
 	}
 	return NULL;
 }
+
 
 void cRenderResource::load()
 {

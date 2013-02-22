@@ -1,54 +1,20 @@
-﻿Build started 2/21/2013 10:46:16 PM.
-     1>Project "C:\Users\Fligar\Desktop\xFileDemo\XFileDemo\XFileDemo.vcxproj" on node 2 (build target(s)).
+﻿Build started 2/22/2013 11:28:22 AM.
+     1>Project "C:\Users\aaron.saul\Google Drive\xDemo\XFileDemo\XFileDemo.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Touching "Debug\XFileDemo.unsuccessfulbuild".
+         Creating "Debug\XFileDemo.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt d3dApp.cpp d3dUtil.cpp DirectInput.cpp GfxStats.cpp ResourceManager.cpp tinystr.cpp tinyxml.cpp tinyxmlerror.cpp tinyxmlparser.cpp Vertex.cpp XFileDemo.cpp
-         XFileDemo.cpp
-     1>c:\users\fligar\desktop\xfiledemo\xfiledemo\xfiledemo.cpp(140): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\fligar\desktop\xfiledemo\xfiledemo\xfiledemo.cpp(234): warning C4018: '<' : signed/unsigned mismatch
-         Vertex.cpp
-         tinyxmlparser.cpp
-         tinyxmlerror.cpp
-         tinyxml.cpp
-         tinystr.cpp
-         ResourceManager.cpp
-         GfxStats.cpp
-     1>c:\users\fligar\desktop\xfiledemo\xfiledemo\gfxstats.cpp(23): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
-     1>c:\users\fligar\desktop\xfiledemo\xfiledemo\gfxstats.cpp(114): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
-         DirectInput.cpp
-         d3dUtil.cpp
-         d3dApp.cpp
-         Generating Code...
+         All outputs are up-to-date.
        ManifestResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\XFileDemo.exe.embed.manifest.res" Debug\XFileDemo_manifest.rc 
+         All outputs are up-to-date.
        Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Fligar\Desktop\xFileDemo\XFileDemo\Debug\XFileDemo.exe" /INCREMENTAL /NOLOGO /FORCE:MULTIPLE d3d9.lib d3dx9d.lib dxguid.lib DxErr.lib dinput8.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\XFileDemo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Fligar\Desktop\xFileDemo\XFileDemo\Debug\XFileDemo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"C:\Users\Fligar\Desktop\xFileDemo\XFileDemo\Debug\XFileDemo.lib" /MACHINE:X86 Debug\XFileDemo.exe.embed.manifest.res
-         Debug\d3dApp.obj
-         Debug\d3dUtil.obj
-         Debug\DirectInput.obj
-         Debug\GfxStats.obj
-         Debug\ResourceManager.obj
-         Debug\tinystr.obj
-         Debug\tinyxml.obj
-         Debug\tinyxmlerror.obj
-         Debug\tinyxmlparser.obj
-         Debug\Vertex.obj
-         Debug\XFileDemo.obj
-     1>LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/FORCE' specification
+         All outputs are up-to-date.
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\XFileDemo.exe.embed.manifest" /manifest Debug\XFileDemo.exe.intermediate.manifest
          All outputs are up-to-date.
-       LinkEmbedManifest:
-         All outputs are up-to-date.
-         XFileDemo.vcxproj -> C:\Users\Fligar\Desktop\xFileDemo\XFileDemo\Debug\XFileDemo.exe
        FinalizeBuildStatus:
          Deleting file "Debug\XFileDemo.unsuccessfulbuild".
          Touching "Debug\XFileDemo.lastbuildstate".
-     1>Done Building Project "C:\Users\Fligar\Desktop\xFileDemo\XFileDemo\XFileDemo.vcxproj" (build target(s)).
+     1>Done Building Project "C:\Users\aaron.saul\Google Drive\xDemo\XFileDemo\XFileDemo.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:15.91
+Time Elapsed 00:00:00.42

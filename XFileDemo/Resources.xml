@@ -5,7 +5,8 @@
 <!-----------------------------------------AUDIO ASSETS -------------------------------->
 <!---------------------------------------------------------------------------------------->
 <resources>
-	 <resource UID="25" type ="graphic" filename ="3D\car.x" scenescope = "0"></resource>
+	 <!-- <resource UID="25" type ="graphic" filename ="3D\car.x" scenescope = "0"></resource> -->
+	 <resource UID="26" type ="graphic" filename ="3D\dwarf.x" scenescope = "0"></resource>
 	 <resource UID="1" type ="texture" filename ="Textures\TeamATitle.png" scenescope = "0" width="800" height="600"></resource>
 	 <resource UID="2" type="audio" filename ="Audio\bull_1.mp3" scenescope="0" audiotype="default"></resource>
 	 <resource UID="3" type="audio" filename ="Audio\DrumLoop.mp3" scenescope="0" audiotype="default"></resource>

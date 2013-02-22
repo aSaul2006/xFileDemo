@@ -111,7 +111,7 @@ XFileDemo::XFileDemo(HINSTANCE hInstance, std::string winCaption, D3DDEVTYPE dev
 
 	resMan->loadFromXMLFile("Resources.xml");
 	resMan->setCurrentScope(0);
-	m_CarRes = (cRenderResource*) resMan->findResourcebyID(0);
+	m_CarRes = (cRenderResource*) resMan->findResourcebyID(26);
 	
 
 	//LoadXFile("bigship1.x", &mMesh, mMtrl, mTex);

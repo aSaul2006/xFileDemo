@@ -10,8 +10,8 @@
 #include "ResourceManager.h"
 #include "d3dUtil.h"
 
+extern cRenderManager* g_renMan = new cRenderManager();
 
-cRenderManager* g_renMan = new cRenderManager();
 
 
 
@@ -38,7 +38,7 @@ bool cResourceManager::loadFromXMLFile(std::string Filename)
 
 				if(Element)
 				{
-					cResource *Resource = NULL;
+					cResource* Resource = NULL;
 					
 
 					for(TiXmlAttribute* ElementAttrib = Element->FirstAttribute(); ElementAttrib; ElementAttrib = ElementAttrib->Next())
@@ -57,6 +57,7 @@ bool cResourceManager::loadFromXMLFile(std::string Filename)
 							{
 								
 								Resource = g_renMan->load3DFromXML(Element);
+								
 							}
 
 							if(AttribValue=="texture")

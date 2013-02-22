@@ -120,10 +120,13 @@ struct BoundingSphere
 };
 class cRenderManager
 {
+
 public:
 	cResource* load3DFromXML(TiXmlElement *Element);
 	cRenderManager(){};
 	~cRenderManager(){};
+
+
 };
 //-------------------------------------------------------------------------------
 //===============================================================================
@@ -137,10 +140,6 @@ private:
 	std::vector<IDirect3DTexture9*> mTex;
 protected:
 public:
-	unsigned int m_ResourceID;
-	unsigned int m_Scope;
-	std::string m_FileName;
-	RESOURCE_TYPE m_Type;
 
 	//To be overloaded by derived classes
 	
@@ -154,7 +153,7 @@ public:
 	inline cRenderResource()
 	{
 		m_ResourceID = m_Scope = 0;
-		m_Type = RESOURCE_NULL;
+		m_Type = RESOURCE_GRAPHIC;
 	}
 };
 //===============================================================
