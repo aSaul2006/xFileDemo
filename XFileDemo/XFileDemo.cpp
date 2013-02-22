@@ -111,7 +111,7 @@ XFileDemo::XFileDemo(HINSTANCE hInstance, std::string winCaption, D3DDEVTYPE dev
 
 	resMan->loadFromXMLFile("Resources.xml");
 	resMan->setCurrentScope(0);
-	m_CarRes = (cRenderResource*) resMan->findResourcebyID(25);
+	m_CarRes = (cRenderResource*) resMan->findResourcebyID(0);
 	
 
 	//LoadXFile("bigship1.x", &mMesh, mMtrl, mTex);
@@ -119,8 +119,11 @@ XFileDemo::XFileDemo(HINSTANCE hInstance, std::string winCaption, D3DDEVTYPE dev
 
 	HR(D3DXCreateTextureFromFile(gd3dDevice, "whitetex.dds", &mWhiteTex));
 
-	mGfxStats->addVertices(mMesh->GetNumVertices());
-	mGfxStats->addTriangles(mMesh->GetNumFaces());
+	//mGfxStats->addVertices(mMesh->GetNumVertices());
+	//mGfxStats->addTriangles(mMesh->GetNumFaces());
+
+	mGfxStats->addVertices(m_CarRes->getMesh()->GetNumVertices());
+	mGfxStats->addTriangles(m_CarRes->getMesh()->GetNumFaces());
 
 	buildFX();
 
@@ -228,14 +231,14 @@ void XFileDemo::drawScene()
 	HR(mFX->Begin(&numPasses, 0));
 	HR(mFX->BeginPass(0));
 
-	for(int j = 0; j < mMtrl.size(); ++j)
+	for(int j = 0; j < m_CarRes->getMtrl().size(); ++j)
 	{
-		HR(mFX->SetValue(mhMtrl, &mMtrl[j], sizeof(Mtrl)));
+		HR(mFX->SetValue(mhMtrl, &m_CarRes->getMtrl()[j], sizeof(Mtrl)));
 	
 		// If there is a texture, then use.
-		if(mTex[j] != 0)
+		if(m_CarRes->getTex()[j] != 0)
 		{
-			HR(mFX->SetTexture(mhTex, mTex[j]));
+			HR(mFX->SetTexture(mhTex, m_CarRes->getTex()[j]));
 		}
 
 		// But if not, then set a pure white texture.  When the texture color
@@ -247,7 +250,7 @@ void XFileDemo::drawScene()
 		}
 	
 		HR(mFX->CommitChanges());
-		HR(mMesh->DrawSubset(j));
+		HR(m_CarRes->getMesh()->DrawSubset(j));
 	}
 	HR(mFX->EndPass());
 	HR(mFX->End());

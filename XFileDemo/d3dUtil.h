@@ -132,9 +132,9 @@ public:
 class cRenderResource : public cResource 
 {
 private:
-	static ID3DXMesh* mMesh;
-	static std::vector<Mtrl> mMtrl;
-	static std::vector<IDirect3DTexture9*> mTex;
+	ID3DXMesh* mMesh;
+	std::vector<Mtrl> mMtrl;
+	std::vector<IDirect3DTexture9*> mTex;
 protected:
 public:
 	unsigned int m_ResourceID;
